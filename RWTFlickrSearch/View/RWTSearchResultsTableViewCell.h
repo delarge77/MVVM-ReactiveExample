@@ -4,7 +4,10 @@
 //
 
 @import UIKit;
+#import "CEReactiveView.h"
 
-@interface RWTSearchResultsTableViewCell : UITableViewCell
+@interface RWTSearchResultsTableViewCell : UITableViewCell<CEReactiveView>
+
+- (void) setParallax:(CGFloat)value;
 
 @end
